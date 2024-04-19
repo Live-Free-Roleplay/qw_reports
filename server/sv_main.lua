@@ -27,8 +27,8 @@ local function buildDiscordMessage(reportingPlayerId, reportData)
             message = message .. '**License: **' .. '||' .. v .. '||' .. '\n'
         elseif string.sub(v, 1, string.len("xbl:")) == "xbl:" then
             message = message .. '**XBL: **' .. '||' .. v .. '||' .. '\n'
-        elseif string.sub(v, 1, string.len("ip:")) == "ip:" then
-            message = message .. '**IP: **' .. '||' .. v .. '||' .. '\n'
+        --elseif string.sub(v, 1, string.len("ip:")) == "ip:" then
+            --message = message .. '**IP: **' .. '||' .. v .. '||' .. '\n'
         elseif string.sub(v, 1, string.len("discord:")) == "discord:" then
             message = message .. '**Discord: **' .. '||' .. v .. '||' .. '\n'
         elseif string.sub(v, 1, string.len("live:")) == "live:" then
